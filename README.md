@@ -1,7 +1,7 @@
 # Servidor-Node
 ## Guía de ejemplo en la construcción de un servidor en NodeJs.
 
- **La carpeta Web.Server (servidor) contiene los modulos logicos de controlador, logica y conexión,  cada uno se conecta entre si por medio del export en JavaScript, 
+ **La carpeta Web.Server (servidor) contiene los modulos logicos de controlador, logica y conexión,  cada uno se conecta entre si por medio del export en JavaScript,** 
  
  
  Nota: La parte del Frontend no esta implementada aún, si necesita adecuarlo a uno solo cambiar la ruta del /../Web.App donde se encuentre los archivos del nuevo Frondend, en el server.js.. La instacia de Tedious utilizada es la 14 ... una version mas actualizada no soportara la logica del servidor, si quisiera mejorar esa parte seria bueno las recomendaciones.
