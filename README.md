@@ -7,9 +7,12 @@
  Nota: La parte del Frontend no esta implementada aún, si necesita adecuarlo a uno solo cambiar la ruta del /../Web.App donde se encuentre los archivos del nuevo Frondend, en el server.js.. La instacia de Tedious utilizada es la 14 ... una version mas actualizada no soportara la logica del servidor, si quisiera mejorar esa parte seria bueno las recomendaciones.
  
  ```[javascript]
+ 
   //Se direccionan las vistas. EL mismos server levanta las vistas, para el caso de AngularJs.
   app.use('/', express.static(__dirname + '/../Web.App'));
+  
   ```
+  
   Dentro de la carpeta Web.Server encontrara los archivos necesarios para montar un servidor en ***NodeJs***, con una ejecución simple del paquete de instalacion (npm install), el package.js contiene las instancias y obtiene los archivos necesario junto con el nucleo de node para ejecutar el servidor y dejarlo correindo en una version de desarrollo, la logica del servidor consiste en:
 
   **La parte servidor:
@@ -19,6 +22,7 @@
    **La parte controlador (Controladores)
    
    Esta sección contendra los controladores a los cuales se les pediran las peticiones, divididas en CRUD hacia la parte de logia.
+   
     ```[javascript]
     exports.peticion = function peticion(request, response) {
         //llamada a uno de las funciones de logica, se puede dividir en funciones CRUD
@@ -48,6 +52,7 @@
    Dividida en 2 secciones, la primera conecta con las bases de datos prefereridas (archivos de configuracion) y las segundo realiza la conexion desde la logica hacia la base de datos.
    
    Configurar esta parte para la conexión con MongoDB.
+   
    ```[javascript]
    {
        "title": "Archivo configuración de MongoDB",
