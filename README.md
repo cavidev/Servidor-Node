@@ -24,12 +24,14 @@
    Esta sección contendra los controladores a los cuales se les pediran las peticiones, divididas en CRUD hacia la parte de logia.
    
     ```[javascript]
+    
     exports.peticion = function peticion(request, response) {
         //llamada a uno de las funciones de logica, se puede dividir en funciones CRUD
         logica_NombreModulo_.logicaPeticion(request.body, function(res) {
             response.send(res); //Forma en la que responde el servidor.
         });
     };
+    
     ```
      
    **La parte logica (Lógica)
@@ -45,6 +47,7 @@
               callback(res); //SE DEVUELVE RES
           });
       }
+      
    ```
    
    **La parte conexcion (Conexión)
@@ -54,6 +57,7 @@
    Configurar esta parte para la conexión con MongoDB.
    
    ```[javascript]
+   
    {
        "title": "Archivo configuración de MongoDB",
        "description": "Archivo de configuración con los parámetros necesarios para establecer la conexión a mongodb",
@@ -65,4 +69,5 @@
            "database": ""
        }
    }
+   
     ```
